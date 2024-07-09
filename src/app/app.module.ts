@@ -8,6 +8,8 @@ import { BrowseComponent } from './core/pages/browse/browse.component';
 import { LoginComponent } from './core/pages/login/login.component';
 import { provideHttpClient } from '@angular/common/http';
 import { MovieCarouselComponent } from './core/shared/components/movie-carousel/movie-carousel.component';
+import { DescriptionPipe } from "./core/shared/pipes/description.pipe";
+import { ImagePipe } from "./core/shared/pipes/image.pipe";
 
 
 @NgModule({
@@ -21,8 +23,10 @@ import { MovieCarouselComponent } from './core/shared/components/movie-carousel/
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-  ],
+    AppRoutingModule,
+    DescriptionPipe,
+    ImagePipe
+],
   providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })

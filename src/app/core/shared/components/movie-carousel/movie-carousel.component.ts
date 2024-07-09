@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import Swiper from 'swiper';
 import { IVideoContent } from '../../models/videoContent';
+import { DescriptionPipe } from '../../pipes/description.pipe';
+import { ImagePipe } from '../../pipes/image.pipe';
 
 @Component({
   selector: 'app-movie-carousel',
