@@ -1,5 +1,7 @@
 import { Component, OnInit, inject } from '@angular/core';
 import { AuthService } from 'src/app/core/shared/services/auth.service';
+import { HeaderComponent } from '../../components/header/header.component';
+import { BannerComponent } from '../../components/banner/banner.component';
 
 
 @Component({
