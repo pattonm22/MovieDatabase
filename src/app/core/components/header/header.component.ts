@@ -12,6 +12,6 @@ export class HeaderComponent {
   name = JSON.parse(sessionStorage.getItem("loggedInUser")!).name;
   auth = inject(AuthService);
   userProfileImg = JSON.parse(sessionStorage.getItem("loggedInUser")!).picture;
-  navList = ["Home", "TV Shows", "Movies", "New & Popular", "My List", "Browse by Language"]
+  navList = ["Home", "TV Shows", "Movies", "New & Popular", "My List"]
 
 }

@@ -4,18 +4,21 @@
         <img width="110" src="/assets/pngwing.com.png" alt="netflix-logo">
         <ul class="flex items-center" *ngFor="let item of navList">
             <li
-                class="text-neutral-200 cursor-pointer text-sm font-extralight hover:text-gray-400 transition-[1s] font-bold">
+                class="text-neutral-200  md:font-bold  cursor-pointer text-sm font-extralight hover:text-gray-400 transition-[1s] font-bold">
                 {{item}}</li>
         </ul>
     </div>
     <!-- Welcome User | profile Img | Signout -->
-    <div class="text-white flex items-center gap-4">
+    <div class="text-white md:font-bold flex items-center gap-4">
         <div class="flex items-center gap-2">
-            <a href="/"><span>Welcome <strong>{{name}}</strong></span></a>
+            <span>Welcome <strong>{{name}}</strong></span>
             <img [src]="userProfileImg" width="42" alt="user-img" class="rounded-full">
         </div>
         &nbsp; | &nbsp;
-        <a href="/">Signout</a>
+        <div>
+            <a href="/">Signout</a>
+        </div>
+
     </div>
 
-</header>"
+</header>

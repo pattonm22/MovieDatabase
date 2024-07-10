@@ -13,6 +13,7 @@ export class MovieCarouselComponent implements OnInit, AfterViewInit {
   @Input() videoContents: IVideoContent[] = [];
   @Input () title: string = '';
   @ViewChild('swiperContainer') swiperContainer!: ElementRef
+movie: any;
 
   constructor() { }
 
